@@ -9,14 +9,14 @@ BookCars is an open source car rental platform, supplier oriented, with a backen
 
 # Features
 
-* Supplier management
-* Car fleet management
-* Booking management
-* Client management
-* Multiple payment methods
-* Multiple language support
-* Responsive backend and frontend
-* Native Mobile app for Android and iOS
+- Supplier management
+- Car fleet management
+- Booking management
+- Client management
+- Multiple payment methods
+- Multiple language support
+- Responsive backend and frontend
+- Native Mobile app for Android and iOS
 
 # Download
 
@@ -33,10 +33,6 @@ You can find instructions [here](https://github.com/aelassas/bookcars/wiki/Build
 # Run from Code
 
 You can find instructions in the [wiki](https://github.com/aelassas/bookcars/wiki/Run-from-code) to run BookCars from code.
-
-# Documentation
-
-You can find documentation [here](https://github.com/aelassas/bookcars/wiki).
 
 # Overview
 
@@ -85,6 +81,7 @@ From the mobile app, the user can search for available cars, choose a car and ch
 The user can also receive push notifications, if the status of his booking is updated.
 
 Below is the main page of the mobile app where the user can choose pickup and drop-off locations, dates and time booking, and search for available cars.
+
   </p>
   <img src="https://github.com/aelassas/bookcars/blob/main/screenshots/mobileapp-1.jpg?raw=true" alt="" width="200" style="float: left; margin: 5px"/>
   <img src="https://github.com/aelassas/bookcars/blob/main/screenshots/mobileapp-2.jpg?raw=true" alt="" width="200" style="float: left; margin: 5px"/>
@@ -123,11 +120,12 @@ Below is the main page of the mobile app where the user can choose pickup and 
 That's it for the main pages of the mobile app.
 
 ## Backend
+
 BookCars is supplier oriented. This means that there are three types of users:
 
-* Admin: He has full access to backend. He can do everything.
-* Supplier: He has restricted access to backend. He can only manage his cars and bookings.
-* User: He has only access to frontend and mobile app. He cannot access the backend.
+- Admin: He has full access to backend. He can do everything.
+- Supplier: He has restricted access to backend. He can only manage his cars and bookings.
+- User: He has only access to frontend and mobile app. He cannot access the backend.
 
 BookCars is designed to work with multiple suppliers. Each supplier can manage his car fleet and bookings from the backend. BookCars can also work with only one supplier too.
 
@@ -147,7 +145,7 @@ Below is the page where car fleet is displayed and can be managed.
 
 ![Backend](https://github.com/aelassas/bookcars/blob/main/screenshots/backend-3.png?raw=true)
 
-Below is the page where admins and suppliers can create new cars by providing an image and car info. 
+Below is the page where admins and suppliers can create new cars by providing an image and car info.
 
 ![Backend](https://github.com/aelassas/bookcars/blob/main/screenshots/backend-4.png?raw=true)
 
@@ -183,23 +181,23 @@ BookCars mobile app is built with React Native and Expo.
 
 BookCars API exposes all BookCars functions needed for the backend, the frontend and the mobile app. The API follows the MVC design pattern. JWT is used for authentication. There are some functions that need authentication and others that does not need authentication.
 
-* *./api/models/* folder contains MongoDB models.
-* *./api/routes/* folder contains Express routes.
-* *./api/controllers/* folder contains controllers.
-* *./api/middlewares/* folder contains middlewares.
-* *./api/server.js* is the main server where database connection is established and routes are loaded.
-* *./api/app.js* is the main entry point of BookCars API.
+- _./api/models/_ folder contains MongoDB models.
+- _./api/routes/_ folder contains Express routes.
+- _./api/controllers/_ folder contains controllers.
+- _./api/middlewares/_ folder contains middlewares.
+- _./api/server.js_ is the main server where database connection is established and routes are loaded.
+- _./api/app.js_ is the main entry point of BookCars API.
 
 ## Frontend
 
 The frontend is a web application built with Node.js, ReactJS and MUI. From the frontend the user can search for available cars depending on pickup and drop-off locations, dates and time booking. He can then select his booking options and finally checkout.
 
-* *./frontend/assets/* folder contains CSS and images.
-* *./frontend/components/* folder contains ReactJS pages.
-* *./frontend/elements/* folder contains ReactJS components.
-* *./frontend/services/* contains BookCars API client services.
-* *./frontend/App.js* is the main ReactJS App that contains routes.
-* *./frontend/index.js* is the main entry point of the frontend.
+- _./frontend/assets/_ folder contains CSS and images.
+- _./frontend/components/_ folder contains ReactJS pages.
+- _./frontend/elements/_ folder contains ReactJS components.
+- _./frontend/services/_ contains BookCars API client services.
+- _./frontend/App.js_ is the main ReactJS App that contains routes.
+- _./frontend/index.js_ is the main entry point of the frontend.
 
 ## Mobile App
 
@@ -207,20 +205,20 @@ BookCars provides a native mobile app for Android and iOS. The mobile app is bu
 
 The user receives push notifications when his bookings are updated. Push notifications are built with Node.js, Expo Server SDK and Firebase.
 
-* *./mobile/assets/* folder contains images.
-* *./mobile/screens/* folder contains main pages.
-* *./mobile/elements/* folder contains React Native components.
-* *./mobile/services/* contains BookCars API client services.
-* *./mobile/App.js* is the main React Native App.
-* *./mobile/index.js* is the main entry point of the mobile app.
+- _./mobile/assets/_ folder contains images.
+- _./mobile/screens/_ folder contains main pages.
+- _./mobile/elements/_ folder contains React Native components.
+- _./mobile/services/_ contains BookCars API client services.
+- _./mobile/App.js_ is the main React Native App.
+- _./mobile/index.js_ is the main entry point of the mobile app.
 
 ## Backend
 
 The backend is a web application built with Node.js, ReactJS and MUI. From the backend, the admin user can create and manage suppliers, cars, locations, users and bookings. When the admin user creates a new supplier, the supplier will receive an automatic email for creating his account to access the backend so he can manage his car fleet and bookings.
 
-* *./backend/assets/* folder contains CSS and images.
-* *./backend/components/* folder contains ReactJS pages.
-* *./backend/elements/* folder contains ReactJS components.
-* *./backend/services/* contains BookCars API client services.
-* *./backend/App.js* is the main ReactJS App that contains routes.
-* *./backend/index.js* is the main entry point of the backend.
+- _./backend/assets/_ folder contains CSS and images.
+- _./backend/components/_ folder contains ReactJS pages.
+- _./backend/elements/_ folder contains ReactJS components.
+- _./backend/services/_ contains BookCars API client services.
+- _./backend/App.js_ is the main ReactJS App that contains routes.
+- _./backend/index.js_ is the main entry point of the backend.
