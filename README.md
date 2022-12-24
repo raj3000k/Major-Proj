@@ -1,5 +1,4 @@
-[![Backend CI](https://github.com/aelassas/bookcars/actions/workflows/backend.yml/badge.svg)](https://github.com/aelassas/bookcars/actions/workflows/backend.yml)
-[![Frontend CI](https://github.com/aelassas/bookcars/actions/workflows/frontend.yml/badge.svg)](https://github.com/aelassas/bookcars/actions/workflows/frontend.yml)
+
 
 <p align="center">
   <img src="https://bookcars.github.io/content/bookcars.drawio.png" alt="" width="500" />
